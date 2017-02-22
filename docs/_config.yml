@@ -6,7 +6,7 @@ description: |
 baseurl: ""
 url: "http://opendatahandbook.org" # the base hostname & protocol for your site
 github_username:  sween
-github_repo:  national_provider_direcotry
+github_repo:  national_provider_directory
 # paypal: admin@okfn.org
 contact: https://discuss.okfn.org/c/network-and-community/open-data-handbook
 
