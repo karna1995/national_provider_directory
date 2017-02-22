@@ -23,13 +23,13 @@ contributors:
 supporters:
   -
     name: InterSystems Corporation
-    logo: shuttleworth.png
-    footer_logo: shuttleworth-footer.png
+    logo: intersystems-logo.png
+    footer_logo: intersystems-logl.png
     url: http://www.intersystems.com
   -
     name: Google Cloud Platform
-    logo: worldbank.png
-    footer_logo: worldbank-footer.png
+    logo: google_cloud-logo.png
+    footer_logo: google_cloud-logo.png
     url: https://cloud.google.com/
 
 
