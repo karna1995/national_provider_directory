@@ -1,6 +1,6 @@
 # Site settings
 title: National Provider Directory
-short_title: NPD
+short_title: NPD - National Provider Directory
 description: |
     A functional National Provider Directory implementation and reference architecture based on Master Data Management Principles and powered by InterSystems Healthshare and Google Cloud Platform.
 baseurl: ""
