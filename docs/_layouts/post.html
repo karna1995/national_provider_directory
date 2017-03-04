@@ -1,28 +1,41 @@
 ---
 layout: default
-wide: true
 ---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-{% assign section = page.section %}
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> {% if page.author %}<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">/ {{ page.author }}</span></span>{% endif %}{% if page.tags != null %}/
+            {% assign projectTags = site.data.tags.allowed-tags %}
+            {% for tag in page.tags %}
+            {% if projectTags contains tag %}
+            <a href="{{ "tag_" | append: tag | append: ".html"}}">{{tag}}</a>{% unless forloop.last %}, {% endunless%}
+            {% endif %}
+            {% endfor %}
+            {% endif %}
 
-{% assign section_base = site.baseurl | append: section | append: '/' %}
+        </p>
 
-<div class="post">
-  <article class="post-content">
-    <a href="/{{ section_base }}" class="pre-header">{{ section }}</a>
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.authors %}
-    <div class="author">Written by
-      <ul>
-      {% for author in page.authors %}
-        <li>{{ author }}</li>
-      {% endfor %}
-      </ul>
+
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+
+        {% if page.summary %}
+        <div class="summary">{{page.summary}}</div>
+        {% endif %}
+
+        {{ content }}
     </div>
-    {% endif %}
-    {{ content }}
-  </article>
 
-</div>
 
-{% include page-tools.html %}
+
+</article>
+
+{% if site.disqus %}
+{% include disqus.html %}
+{% endif %}
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}
