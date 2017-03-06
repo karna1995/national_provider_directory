@@ -3,14 +3,14 @@
 topnav:
 - title: Topnav
   items:
-    - title: News
+    - title: Home
       url: /news
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Jekyll Resources
+    - title: Resources
       folderitems:
         - title: Github Repo
           external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
