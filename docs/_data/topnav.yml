@@ -24,9 +24,7 @@ topnav_dropdowns:
           external_url: http://idratherbewriting.com/category-jekyll/
     - title: Partners
       folderitems:
-        - title: Jekyll Documentation Theme
-          url: /mydoc_introduction.html
-        - title: Product 1
-          url: /p1_landing_page.html
-        - title: Product 2
-          url: /p2_landing_page.html
+        - title: InterSystems HealthShare
+          url: http://www.intersystems.com
+        - title: Google Cloud Platform
+          url: http://cloud.google.com
