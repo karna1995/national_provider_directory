@@ -520,7 +520,7 @@ section table tr.danger, table tr.preference, table tr.preference > td.sorting_1
 }
 
 table.profile thead tr th {
-    background-color: #248ec2;
+    background-color: #000;
 }
 
 table.request thead tr th {
@@ -725,7 +725,7 @@ ol.series li {
 
 /* not sure if using this ...*/
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #248ec2 !important;
+    border-color: #000 !important;
 }
 
 #mysidebar .nav ul {
